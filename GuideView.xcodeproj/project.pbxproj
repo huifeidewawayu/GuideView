@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		5A56731D1E9490850049FF91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56731C1E9490850049FF91 /* main.m */; };
 		5A5673201E9490850049FF91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A56731F1E9490850049FF91 /* AppDelegate.m */; };
-		5A5673231E9490850049FF91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5673221E9490850049FF91 /* ViewController.m */; };
 		5A5673261E9490850049FF91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5673241E9490850049FF91 /* Main.storyboard */; };
 		5A5673281E9490850049FF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5673271E9490850049FF91 /* Assets.xcassets */; };
 		5A56732B1E9490850049FF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5673291E9490850049FF91 /* LaunchScreen.storyboard */; };
 		5A5673361E9490850049FF91 /* GuideViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5673351E9490850049FF91 /* GuideViewTests.m */; };
 		5A5673411E9490850049FF91 /* GuideViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5673401E9490850049FF91 /* GuideViewUITests.m */; };
+		5AB18AD11E94D3E500808703 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB18AD01E94D3E500808703 /* GuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		5A56731C1E9490850049FF91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A56731E1E9490850049FF91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A56731F1E9490850049FF91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A5673211E9490850049FF91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A5673221E9490850049FF91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A5673251E9490850049FF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A5673271E9490850049FF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A56732A1E9490850049FF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		5A56733C1E9490850049FF91 /* GuideViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5673401E9490850049FF91 /* GuideViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewUITests.m; sourceTree = "<group>"; };
 		5A5673421E9490850049FF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB18ACF1E94D3E500808703 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		5AB18AD01E94D3E500808703 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 			children = (
 				5A56731E1E9490850049FF91 /* AppDelegate.h */,
 				5A56731F1E9490850049FF91 /* AppDelegate.m */,
-				5A5673211E9490850049FF91 /* ViewController.h */,
-				5A5673221E9490850049FF91 /* ViewController.m */,
+				5AB18ACF1E94D3E500808703 /* GuideViewController.h */,
+				5AB18AD01E94D3E500808703 /* GuideViewController.m */,
 				5A5673241E9490850049FF91 /* Main.storyboard */,
 				5A5673271E9490850049FF91 /* Assets.xcassets */,
 				5A5673291E9490850049FF91 /* LaunchScreen.storyboard */,
@@ -276,9 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5673231E9490850049FF91 /* ViewController.m in Sources */,
 				5A5673201E9490850049FF91 /* AppDelegate.m in Sources */,
 				5A56731D1E9490850049FF91 /* main.m in Sources */,
+				5AB18AD11E94D3E500808703 /* GuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +516,7 @@
 				5A5673471E9490850049FF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A5673481E9490850049FF91 /* Build configuration list for PBXNativeTarget "GuideViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				5A56734A1E9490850049FF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A56734B1E9490850049FF91 /* Build configuration list for PBXNativeTarget "GuideViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				5A56734D1E9490850049FF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

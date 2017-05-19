@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GuideViewController.h
 //  GuideView
 //
 //  Created by wurui on 17/4/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GuideViewController : UIViewController
 
 @end
-
